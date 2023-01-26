@@ -497,3 +497,45 @@
 // const totals = [tips[0]+bills[0],tips[1]+bills[1],tips[2]+bills[2]];
 // console.log(totals);    //[287.5, 24, 420]
 
+////Objects
+
+// const Tamil = {
+//     firstName: 'Tamil',
+//     lastName: 'Mani',
+//     age: 22,
+//     friends: ['vijay', 'nithin', 'sakthi']
+// };
+
+// console.log(Tamil); //{firstName: 'Tamil', lastName: 'Mani', age: 22, friends: Array(3)}age: 22firstName: "Tamil"friends: (3) ['vijay', 'nithin', 'sakthi']lastName: "Mani"[[Prototype]]: Object
+
+// //Dot vs Bracket Notation
+
+
+// console.log(Tamil.firstName);   //Tamil
+// console.log(Tamil['lastName'])  //Mani
+
+// const inputOption = prompt("what would you likes to know : Tamil's => firstName; lastName; age; friends");
+// console.log(Tamil.inputOption); //undefined
+// console.log(Tamil[inputOption]);    //Tamil
+
+// Tamil.location = 'salem';
+// Tamil['Insta'] = 'tamil_vij';
+
+// console.log(Tamil); //{firstName: 'Tamil', lastName: 'Mani', age: 22, friends: Array(3), location: 'salem', …}
+
+// console.log(`${Tamil.firstName} has ${Tamil.friends.length} friends and his best friend is ${Tamil.friends[0]}`);   //Tamil has 3 friends and his best friend is vijay
+
+
+//Object Methods
+
+const Tamil = {
+    firstName: 'Tamil',
+    lastName: 'Mani',
+    birthYear: 2002,
+    friends: ['vijay', 'nithin', 'sakthi'],
+    calcAge: function(birthYear){
+        return 2022-birthYear;
+    }
+};
+
+console.log(Tamil);
