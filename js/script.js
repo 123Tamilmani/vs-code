@@ -526,16 +526,48 @@
 // console.log(`${Tamil.firstName} has ${Tamil.friends.length} friends and his best friend is ${Tamil.friends[0]}`);   //Tamil has 3 friends and his best friend is vijay
 
 
-//Object Methods
+// //Object Methods
 
-const Tamil = {
-    firstName: 'Tamil',
-    lastName: 'Mani',
-    birthYear: 2002,
-    friends: ['vijay', 'nithin', 'sakthi'],
-    calcAge: function(birthYear){
-        return 2022-birthYear;
-    }
-};
+// const Tamil = {
+//     firstName: 'Tamil',
+//     lastName: 'Mani',
+//     birthYear: 2002,
+//     friends: ['vijay', 'nithin', 'sakthi'],
+//     driverLicense: true,
+//     checkDriverLicense: function(driverLicense)
+//     {
+//         this.hasDriverLicense = this.driverLicense ? 'yes' : 'no';
+//         return this.hasDriverLicense;
+//     },
+//     // calcAge: function(birthYear){
+//     //     return 2022-birthYear;
+//     // }
 
-console.log(Tamil);
+//     // calcAge: function(){
+//     //     //return 2022-Tamil.birthYear;    //20
+//     //     return 2022-this.birthYear;
+//     // }
+
+//     calcAge: function(){
+//         this.age = 2022-this.birthYear;
+//         return this.age;
+//     }
+// };
+
+// console.log(Tamil.checkDriverLicense());    //yes
+// console.log(Tamil.hasDriverLicense);    //yes
+// console.log(Tamil.driverLicense);   //true
+
+// // console.log(Tamil);
+
+// // console.log(Tamil.calcAge());   //20
+// // console.log(Tamil.age);  //20
+// // console.log(Tamil.age); //20
+// // console.log(Tamil.age); //20
+// // console.log(Tamil.age); //20
+
+// // const x=Tamil.calcAge(2002);
+// //.log(x); //this.age
+
+// // const x=Tamil.calcAge(Tamil.b);
+// // console.log(x); //20
