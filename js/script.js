@@ -571,3 +571,28 @@
 
 // // const x=Tamil.calcAge(Tamil.b);
 // // console.log(x); //20
+
+//Coding challenge
+
+
+const mark = {
+    firstName : 'Mark',
+    height : 1.69,
+    weight : 78,
+    calcBMI : function(){
+        this.markBMI = this.weight/(this.height**2);
+        return markBMI;
+    }
+}
+
+const john = {
+    firstName : 'John',
+    height : 1.95,
+    weight : 92,
+    calcBMI : function(){
+        this.johnBMI = this.weight/(this.height**2);
+        return johnBMI;
+    }
+}
+
+console.log(`${mark.calcBMI() > john.calcBMI() ? mark.markBMI : john.johnBMI}`);
