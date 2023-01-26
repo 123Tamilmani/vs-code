@@ -102,8 +102,45 @@
 // if(age !== 18)
 //     console.log("not 18")       //not 18
 
+// //boolean logics AND OR NOT
 
-// use strict
+// // const hasDriverlicense = true;
+// // const hasGoodvision =  true;
+
+// // console.log(hasDriverlicense && hasGoodvision);   //true
+
+
+// const hasDriverlicense = true;
+// const hasGoodvision =  true;
+
+// console.log(hasDriverlicense && hasGoodvision); //false
+// console.log(hasDriverlicense || hasGoodvision); //true
+
+// const hasDrive = hasDriverlicense && hasGoodvision;
+
+// if(hasDrive)
+// {
+//     console.log(`he/she can drive`);
+// }
+// else
+// {
+//     console.log(`not able to drive`)        //not able to drive
+// }
+
+// const isTired = false;
+
+// if(hasDriverlicense && hasGoodvision && !isTired)
+// {
+//     console.log("can drive");   //can drive
+// }
+// else
+// {
+//     console.log("can't drive");
+// }
+
+
+
+// use strict   
 
 // let hasDriverslicense = false;
 // const passTest =true;
@@ -247,3 +284,30 @@
 //         return `No one is the winner!`;
 // }
 // console.log(Winner(dalfinScore,kolaScore));
+
+
+// // Arrays
+
+// const friends = ['Vijay', 'Nithin', 'Sakthi', 12];  //Array is non primitive and mutable
+
+// console.log(friends);       //(4) ['Vijay', 'Nithin', 'Sakthi', 12]
+
+// console.log(friends[0]);    //Vijay
+
+// console.log(friends.length);    //4
+
+// console.log(friends[friends.length-1]); //12
+
+// friends[3] = 'Ponjeeva';
+
+// console.log(friends);   //(4) ['Vijay', 'Nithin', 'Sakthi', 12]
+
+// //friends = ['Tamil', 'Mani'];    //Uncaught TypeError: Assignment to constant variable
+
+// const firstName = "Tamil"
+// const tamil = [firstName, 'Mani', 2022-2000, 'student', friends];
+
+// console.log(tamil);     //(5) ['Tamil', 'Mani', 22, 'student', Array(4)]
+//                         // (4) ['Vijay', 'Nithin', 'Sakthi', 'Ponjeeva']
+
+          
