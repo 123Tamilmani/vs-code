@@ -139,6 +139,101 @@
 // }
 
 
+//switch statement
+
+// const day = 'monday';
+
+// switch(day)
+// {
+//     case 'monday':
+//         console.log('monday');
+//         break;
+//     case 'tuesday':
+//         console.log('tuesday');
+//         break;
+//     case 'wednesday':
+//     case 'thursday':
+//         console.log(day);   //monday
+// }
+
+// const day = 'wednesday';
+
+// switch(day)
+// {
+//     case 'monday':
+//         console.log('monday');
+//         break;
+//     case 'tuesday':
+//         console.log('tuesday');
+//         break;
+//     case 'wednesday':
+//     case 'thursday':
+//         console.log(da y);  //wednesday
+// }
+
+// const day = 'friday';
+
+// switch(day)
+// {
+//     case 'monday':
+//         console.log('monday');
+//         break;
+//     case 'tuesday':
+//         console.log('tuesday');
+//         break;
+//     case 'wednesday':
+//     case 'thursday':
+//         console.log(day);
+//         break;
+//     default :
+//     console.log("Nothing");     //Nothing
+// }
+
+// const day = 'tuesday';
+
+// switch(day)
+// {
+//     case 'monday':
+//         console.log('monday');
+//         break;
+//     case 'tuesday':
+//         console.log('tuesday'); //tuesday
+//         //break;
+//     case 'wednesday':
+//     case 'thursday':
+//         console.log(day);   //tuesday
+//         //break;
+//     case 'saturday':
+//         console.log('saturday');    //saturday
+//         break;
+//     default :
+//     console.log("Nothing");     
+// }
+
+
+//Statements and Expressions
+
+//Expressions 3+4
+//1990
+//true && false && !false
+
+//statements
+
+// if(10>5)
+// {
+//     const big = '10 is bigger';
+// }
+
+// //Conditional ternary operator
+
+// const age = 20;
+// age >= 18 ? console.log("eligible to vote") : console.log("not eligible to vote");  //eligible to vote
+
+// const drink = age>=18 ? 'wine' : 'water';
+// console.log(drink);     //wine
+
+// console.log(`I like to have ${age >= 18 ? 'wine' : 'water'}`);  //I like to have wine
+
 
 // use strict   
 
@@ -311,3 +406,94 @@
 //                         // (4) ['Vijay', 'Nithin', 'Sakthi', 'Ponjeeva']
 
           
+// const years = [1990, 2002, 2005, 2010, 2020];
+
+// const ageCalc = function (birthYear) {
+//     return 2022-birthYear;
+// }
+
+// console.log(years); //(5) [1990, 2002, 2005, 2010, 2020]
+
+// console.log(ageCalc(years));    //NaN
+
+// const age1 = ageCalc(years[0]);
+// console.log(age1);  //32
+
+// const ages = [ageCalc(years[0]), ageCalc(years[1]), ageCalc(years[2]), ageCalc(years[3]), ageCalc(years[4])];
+// console.log(ages);  //[32, 20, 17, 12, 2]
+
+
+// //Basic Array Oprations Method
+
+// const friends = ['Vijay', 'Nithin', 'Sakthi'];
+
+// //Add elements
+
+// //push method
+
+// friends.push('ponjeeva');
+// console.log(friends);   //['Vijay', 'Nithin', 'Sakthi', 'ponjeeva']
+
+// //Unshift method
+
+// friends.unshift('Tamil');
+// console.log(friends);   //(5) ['Tamil', 'Vijay', 'Nithin', 'Sakthi', 'ponjeeva']
+
+// //remove elements
+
+// //Pop method
+
+// friends.pop();
+// console.log(friends);   //['Tamil', 'Vijay', 'Nithin', 'Sakthi']
+
+// //shift method
+
+// friends.shift();
+// console.log(friends);   //['Vijay', 'Nithin', 'Sakthi']
+
+// //indexOf()
+// console.log(friends.indexOf('Sakthi')); //2
+
+// //includes()
+// console.log(friends.includes('Vijay')); //true
+
+//Coding Challenge 
+
+// function tipCalc(bill)
+// {
+//     let x;
+    // switch(bill){
+    //     case (bill>=50 && bill<=300):
+    //         x = (bill*15)/100;
+    //         break
+    //     default:
+    //         x = (bill*20)/100;
+    // }
+
+//     if(bill>=50 && bill<=300)
+//     {
+//         x = (bill*15)/100;
+//     }
+//     else{
+//         x = (bill*20)/100;
+//     }
+//     return x;
+// }
+
+// const bills = [250, 20, 350];
+
+// // const tip1 = tipCalc(bills[0]);
+// // const tip2 = tipCalc(bills[1]);
+// // const tip3 = tipCalc(bills[2]);
+// // tips.push(tip1);
+// // tips.push(tip2);
+// // tips.push(tip3);
+// // console.log(tip1, tip2, tip3);  //37.5 4 70
+
+// const tips = [tipCalc(bills[0]), tipCalc(bills[1]), tipCalc(bills[2])];
+
+// console.log(tips);  //[37.5, 4, 70]
+
+// const totals = [tips[0]+bills[0],tips[1]+bills[1],tips[2]+bills[2]];
+// console.log(totals);    //[287.5, 24, 420]
+
