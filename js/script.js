@@ -690,3 +690,98 @@
 
 //Looping in Backward and Loops in Loops
 
+// const tamil = ['Tamil', 'Mani', 20, ['vijay',   'sakthi', 'nithin']];
+
+// for(let i = tamil.length-1;i>=0;i--)
+// {
+//     console.log(tamil[i]);  //(3) ['vijay', 'sakthi', 'nithin']
+//                             //20
+//                             //Mani
+//                             //Tamil
+// }
+
+// for(let i=1;i<4;i++)
+// {
+//     console.log(`____starting exersice ${i}`);
+//     for(let j=1;j<6;j++)
+//     {
+//         console.log(`rep No : ${j}`);
+//     }
+// }
+
+// ////output
+
+// // ____starting exersice 1
+// //  rep No : 1
+// //  rep No : 2
+// //  rep No : 3
+// //  rep No : 4
+// //  rep No : 5
+// //  ____starting exersice 2
+// //  rep No : 1
+// //  rep No : 2
+// //  rep No : 3
+// //  rep No : 4
+// //  rep No : 5
+// //  ____starting exersice 3
+// //  rep No : 1
+// //  rep No : 2
+// //  rep No : 
+// //  rep No : 5
+
+
+//While Loop
+// let rep=1;
+// while(rep <= 5)
+// {
+//     console.log(`rep No : ${rep}`);
+//     rep++;
+// }
+
+//o/p
+
+//  rep No : 1
+//  rep No : 2
+//  rep No : 3
+//  rep No : 4
+//  rep No : 5
+
+// let dice = 0;
+// // console.log(dice);
+// while(dice!==6)
+// {
+//     dice = Math.trunc(Math.random()*7);
+//     console.log(dice);
+// }
+
+////coding challenge
+
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const tips = [];
+// const totals = [];
+
+// const calcTips = function(bill)
+// {
+//     return (bill*15)/100;
+// } 
+
+// const calcAvg = function(arr){
+//     let sum = 0;
+//     for(let i=0;i<arr.length;i++)
+//     {
+//         sum+=arr[i];
+//     }
+//     return sum/arr.length;
+// }
+
+// for(let i=0;i<bills.length;i++)
+// {
+//     tips.push(calcTips(bills[i]));
+//     totals.push(tips[i] + bills[i]); 
+// }
+
+// console.log(`tips ${tips}`);                //tips 3.3,44.25,26.4,66,5.55,15.75,1.5,165,12.9,7.8
+// console.log(`totals ${totals}`);            //totals 25.3,339.25,202.4,506,42.55,120.75,11.5,1265,98.9,59.8
+// console.log(`average ${calcAvg(totals)}`);     //average 267.14500000000004
+
+
