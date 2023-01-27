@@ -623,3 +623,70 @@
 // }
 
 // console.log(`${mark.calcBMI() > john.calcBMI() ? mark.firstName : john.firstName} has higher score ${mark.calcBMI() > john.calcBMI() ? mark.calcBMI() : john.calcBMI()} (${mark.calcBMI()} vs ${john.calcBMI()})`);
+ 
+
+// //Iteration : The For Loop
+
+// for(let i=1; i<=3; i++)
+// {
+//     console.log(`Hello No : ${i}`); //Hello No : 1
+// }                                   //Hello No : 2
+//                                     //Hello No : 3
+
+
+
+// //Looping Arrays Breaking and Continuing
+
+
+// const tamil = ['Tamil', 'Mani', 20, ['vijay',   'sakthi', 'nithin']];
+ 
+// console.log(tamil[0]);  //Tamil
+// for(let i=0;i<tamil.length ;i++)    
+// {
+//     console.log(tamil[i]);      //Tamil
+//                                 //Mani
+//                                   //20
+//                                 //(3) ['vijay', 'sakthi', 'nithin']
+// }
+
+// const types = [];
+
+// for(let i=0;i<tamil.length;i++)
+// {
+//     types[i] = typeof tamil[i];
+// }
+
+// console.log(types); //(4) ['string', 'string', 'number', 'object']
+
+//  const years = [1992, 1998, 2000, 2002, 2010];
+
+//  const ages = [];
+
+//  for(let i=0;i<years.length;i++)
+//  {
+//     ages.push(2022-years[i]);
+//  }
+
+//  console.log(ages);     //[30, 24, 22, 20, 12]
+
+
+//  // Continue
+// for(let i=0;i<tamil.length;i++)
+// {
+//     if(typeof tamil[i] !== 'string') continue;
+//     console.log(tamil[i]);      //Tamil
+//                                 //Mani
+// }
+
+// //Break;
+
+// for(let i=0;i<tamil.length;i++)
+// {
+//     if(typeof tamil[i] === 'number') break;
+//     console.log(tamil[i]);       //Tamil
+//                                 //Mani
+// }
+
+
+//Looping in Backward and Loops in Loops
+
