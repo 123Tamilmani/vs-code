@@ -1,4 +1,4 @@
-'use strict'; // to show some hidden errors.
+'use strict';// to show some hidden errors.
 //javascript
 
 //Type conversion and coercion
@@ -783,5 +783,4 @@
 // console.log(`tips ${tips}`);                //tips 3.3,44.25,26.4,66,5.55,15.75,1.5,165,12.9,7.8
 // console.log(`totals ${totals}`);            //totals 25.3,339.25,202.4,506,42.55,120.75,11.5,1265,98.9,59.8
 // console.log(`average ${calcAvg(totals)}`);     //average 267.14500000000004
-
 
