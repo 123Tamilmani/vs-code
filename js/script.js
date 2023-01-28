@@ -784,3 +784,51 @@
 // console.log(`totals ${totals}`);            //totals 25.3,339.25,202.4,506,42.55,120.75,11.5,1265,98.9,59.8
 // console.log(`average ${calcAvg(totals)}`);     //average 267.14500000000004
 
+// //coding challenge
+
+// const temp = [1,-2,-3,4,-6,7,3,'error',2,7];
+
+// const tempamplitude = function(min,max)
+// {
+//     return max-min;
+// }
+
+// let min=temp[0];
+// let max=temp[0];
+
+// for(let i=0;i<temp.length;i++)
+// {
+//     if(typeof temp[i] == 'string')
+//     {
+//         console.log(temp[i]);
+//         continue;
+//     }
+//     if(temp[i]<min)
+//     {
+
+//         min=temp[i];
+//     }
+//     if(temp[i]>max)
+//     {
+
+//         max=temp[i];
+//     }
+// }
+
+// console.log(tempamplitude(min,max));
+
+// //coding challenge
+
+// const foreCast = function(arr)
+// {
+//     let res = "...";
+//     for(let i=0;i<arr.length;i++)
+//     {
+//         res += `${temp[i]} cel in day ${i+1}...`;
+//     }
+//     return res;
+// }
+
+// const temp = [20, 21, 30];
+
+// console.log(foreCast(temp));
