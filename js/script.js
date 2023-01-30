@@ -832,3 +832,4 @@
 // const temp = [20, 21, 30];
 
 // console.log(foreCast(temp));
+
