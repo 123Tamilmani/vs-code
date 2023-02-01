@@ -5,28 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- <style>
-       body {
-        border: 2px solid;
-        padding-left: 700px;
-        /* padding-top: 30px; */
-        padding-bottom: 30px;
-        padding-right: 30px;
-        margin-top: 30px;
-        margin-left: 30px;
-        margin-bottom: 30px;
-        margin-right: 30px;
-      } 
-    </style> -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- <h1>tamil</h1>
-    <label class="name"> enter your name : </label>
-    <input id="name" type="text" placeholder="your name" />
-    <label class="name"> enter your regno : </label>
-    <input id="regno" type="text" placeholder="your regno" />
-    <label> hello </label> -->
+    <header>
+      <h1>Guess the number!</h1>
+    </header>
+    <hr />
+    <h2>Enter number between 1 - 20</h2>
+    <form>
+      <input type="text" class="inputval" /><br />
+      <input type="button" class="btnclk" value="check!" />
+    </form>
+    <div><label class="scrboard">?</label><br /></div>
+    <div>
+      <p class="outval">start guessing...</p>
+    </div>
+    <div class="scores">
+      <label class="score"> Score : </label><br /><br />
+      <label class="highscore">High Score : </label>
+    </div>
+    <div>
+      <input type="button" class="tryagain" value="tryagain!" />
+    </div>
   </body>
   <script src="script.js"></script>
 </html>

@@ -1,0 +1,61 @@
+body {
+  background-image: url(bg-image.jpg);
+  text-align: center;
+}
+.inputval {
+  background-color: gray;
+  color: white;
+  font-size: 2rem;
+  width: 100px;
+  margin-bottom: 20px;
+  text-align: center;
+  cursor:no-drop;
+  /* padding: 20px; */
+}
+
+.btnclk {
+  width: 70px;
+  height: 30px;
+  font-size: 20px;
+  background-color: aliceblue;
+  cursor: pointer;
+  margin-bottom: 60px;
+}
+
+.outval {
+  margin-top: 40px;
+  font-size: 50px;
+}
+
+.scores {
+  font-size: 30px;
+}
+
+.tryagain {
+  /* margin-top: 40px; */
+  position: absolute;
+  bottom: 100px;
+  right: 50px;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  background-color: aliceblue;
+}
+
+/* button {
+  
+} */
+
+.tryagain:active, .btnclk:active {
+  background-color: black;
+}
+
+.scrboard {
+  border: 2px solid black;
+  font-size: 90px;
+  /* margin-top: 20px; */
+  /* margin: 20px; */
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
