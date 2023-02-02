@@ -9,7 +9,7 @@ body {
   width: 100px;
   margin-bottom: 20px;
   text-align: center;
-  cursor:no-drop;
+  cursor: text;
   /* padding: 20px; */
 }
 
@@ -46,7 +46,8 @@ body {
   
 } */
 
-.tryagain:active, .btnclk:active {
+.tryagain:active,
+.btnclk:active {
   background-color: black;
 }
 
