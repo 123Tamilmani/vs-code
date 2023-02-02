@@ -1,4 +1,4 @@
-'use strict';// to show some hidden errors.
+'use strict'; // to show some hidden errors.
 //javascript
 
 //Type conversion and coercion
@@ -32,7 +32,7 @@
 
 // I am 20 years old
 // 12
-// 68  
+// 68
 // 10
 
 //truthy and falsy values
@@ -82,7 +82,6 @@
 // }
 // age is undefined!
 
-
 //Equality operator
 
 // let age = 18;
@@ -108,7 +107,6 @@
 // // const hasGoodvision =  true;
 
 // // console.log(hasDriverlicense && hasGoodvision);   //true
-
 
 // const hasDriverlicense = true;
 // const hasGoodvision =  true;
@@ -137,7 +135,6 @@
 // {
 //     console.log("can't drive");
 // }
-
 
 //switch statement
 
@@ -207,9 +204,8 @@
 //         console.log('saturday');    //saturday
 //         break;
 //     default :
-//     console.log("Nothing");     
+//     console.log("Nothing");
 // }
-
 
 //Statements and Expressions
 
@@ -234,8 +230,7 @@
 
 // console.log(`I like to have ${age >= 18 ? 'wine' : 'water'}`);  //I like to have wine
 
-
-// use strict   
+// use strict
 
 // let hasDriverslicense = false;
 // const passTest =true;
@@ -306,7 +301,7 @@
 // let ageCalc3 = birthYear => 2022 - birthYear;
 // let age3 = ageCalc3(2002);
 //console.log(ageCalc3(2002));
-// console.log(age3); 
+// console.log(age3);
 
 // let add = (x,y) => x + y;
 
@@ -318,10 +313,9 @@
 //     const retirement = 65 - age;
 //     //return retirement;    //45
 //     return `${firstName} retires in ${retirement} years`;
-// } 
+// }
 
 // console.log(yearsUntilRetirement("Tamil", 2002));   //Tamil retires in 45 years
-
 
 //Functions calling other Functions
 
@@ -329,7 +323,7 @@
 // {
 //     return fruit * 4;
 // }
- 
+
 // function fruitPocesser(apples, oranges){
 //    // const applePeices = fruitCutter(apples);
 //   //  const orangePeices = fruitCutter(oranges);
@@ -338,7 +332,6 @@
 // }
 
 // console.log(fruitPocesser(2,3));
-
 
 // //Reviewing Functions
 
@@ -350,12 +343,12 @@
 //     const age = ageCalc(birthYear);
 //     const retirement = 65 - age;
 //     if(retirement > 0)
-//         return retirement;  
+//         return retirement;
 //     else
-//         return -1;  
-   
+//         return -1;
+
 //         //return `${firstName} retires in ${retirement} years`;
-// } 
+// }
 
 // console.log(yearsUntilRetirement("Tamil", 1950));
 // console.log(yearsUntilRetirement("Vijay", 1990));
@@ -375,11 +368,10 @@
 //         return `dalfin is the winner ${dalfinScore} vs ${kolaScore}`;
 //     else if(kolaScore > dalfinScore * 2)
 //         return `kola is the winner ${kolaScore} vs ${dalfinScore}`;
-//     else    
+//     else
 //         return `No one is the winner!`;
 // }
 // console.log(Winner(dalfinScore,kolaScore));
-
 
 // // Arrays
 
@@ -405,7 +397,6 @@
 // console.log(tamil);     //(5) ['Tamil', 'Mani', 22, 'student', Array(4)]
 //                         // (4) ['Vijay', 'Nithin', 'Sakthi', 'Ponjeeva']
 
-          
 // const years = [1990, 2002, 2005, 2010, 2020];
 
 // const ageCalc = function (birthYear) {
@@ -421,7 +412,6 @@
 
 // const ages = [ageCalc(years[0]), ageCalc(years[1]), ageCalc(years[2]), ageCalc(years[3]), ageCalc(years[4])];
 // console.log(ages);  //[32, 20, 17, 12, 2]
-
 
 // //Basic Array Oprations Method
 
@@ -457,18 +447,18 @@
 // //includes()
 // console.log(friends.includes('Vijay')); //true
 
-//Coding Challenge 
+//Coding Challenge
 
 // function tipCalc(bill)
 // {
 //     let x;
-    // switch(bill){
-    //     case (bill>=50 && bill<=300):
-    //         x = (bill*15)/100;
-    //         break
-    //     default:
-    //         x = (bill*20)/100;
-    // }
+// switch(bill){
+//     case (bill>=50 && bill<=300):
+//         x = (bill*15)/100;
+//         break
+//     default:
+//         x = (bill*20)/100;
+// }
 
 //     if(bill>=50 && bill<=300)
 //     {
@@ -510,7 +500,6 @@
 
 // //Dot vs Bracket Notation
 
-
 // console.log(Tamil.firstName);   //Tamil
 // console.log(Tamil['lastName'])  //Mani
 
@@ -524,7 +513,6 @@
 // console.log(Tamil); //{firstName: 'Tamil', lastName: 'Mani', age: 22, friends: Array(3), location: 'salem', …}
 
 // console.log(`${Tamil.firstName} has ${Tamil.friends.length} friends and his best friend is ${Tamil.friends[0]}`);   //Tamil has 3 friends and his best friend is vijay
-
 
 // //Object Methods
 
@@ -574,7 +562,6 @@
 
 //Coding challenge
 
-
 // const mark = {
 //     firstName : 'Mark',
 //     height : 1.69,
@@ -591,14 +578,13 @@
 //     height : 1.95,
 //     weight : 92,
 //     //johnBMI,                       //Mark has higher score 27.309968138370508 (27.309968138370508 vs 24.194608809993426)
-//     calcBMI : function(){            
+//     calcBMI : function(){
 //         let johnBMI = this.weight/(this.height**2);
 //         return johnBMI;
-//     }            
+//     }
 // }
 
 // console.log(`${mark.calcBMI() > john.calcBMI() ? mark.firstName : john.firstName} has higher score ${mark.calcBMI() > john.calcBMI() ? mark.calcBMI() : john.calcBMI()} (${mark.calcBMI()} vs ${john.calcBMI()})`);
-
 
 // const mark = {
 //     firstName : 'Mark',
@@ -623,7 +609,6 @@
 // }
 
 // console.log(`${mark.calcBMI() > john.calcBMI() ? mark.firstName : john.firstName} has higher score ${mark.calcBMI() > john.calcBMI() ? mark.calcBMI() : john.calcBMI()} (${mark.calcBMI()} vs ${john.calcBMI()})`);
- 
 
 // //Iteration : The For Loop
 
@@ -633,15 +618,12 @@
 // }                                   //Hello No : 2
 //                                     //Hello No : 3
 
-
-
 // //Looping Arrays Breaking and Continuing
 
-
 // const tamil = ['Tamil', 'Mani', 20, ['vijay',   'sakthi', 'nithin']];
- 
+
 // console.log(tamil[0]);  //Tamil
-// for(let i=0;i<tamil.length ;i++)    
+// for(let i=0;i<tamil.length ;i++)
 // {
 //     console.log(tamil[i]);      //Tamil
 //                                 //Mani
@@ -669,7 +651,6 @@
 
 //  console.log(ages);     //[30, 24, 22, 20, 12]
 
-
 //  // Continue
 // for(let i=0;i<tamil.length;i++)
 // {
@@ -686,7 +667,6 @@
 //     console.log(tamil[i]);       //Tamil
 //                                 //Mani
 // }
-
 
 //Looping in Backward and Loops in Loops
 
@@ -726,9 +706,8 @@
 // //  ____starting exersice 3
 // //  rep No : 1
 // //  rep No : 2
-// //  rep No : 
+// //  rep No :
 // //  rep No : 5
-
 
 //While Loop
 // let rep=1;
@@ -763,7 +742,7 @@
 // const calcTips = function(bill)
 // {
 //     return (bill*15)/100;
-// } 
+// }
 
 // const calcAvg = function(arr){
 //     let sum = 0;
@@ -777,7 +756,7 @@
 // for(let i=0;i<bills.length;i++)
 // {
 //     tips.push(calcTips(bills[i]));
-//     totals.push(tips[i] + bills[i]); 
+//     totals.push(tips[i] + bills[i]);
 // }
 
 // console.log(`tips ${tips}`);                //tips 3.3,44.25,26.4,66,5.55,15.75,1.5,165,12.9,7.8
@@ -810,7 +789,7 @@
 //     }
 //     if(temp[i]>max)
 //     {
- 
+
 //         max=temp[i];
 //     }
 // }
@@ -833,3 +812,29 @@
 
 // console.log(foreCast(temp));
 
+// project 1 Guess the Number
+
+// console.log(document.querySelector('.outval').textContent);
+
+// document.querySelector('.outval').textContent = 'Correct Number';
+// document.querySelector('.inputval').value= 20;
+
+// document.querySelector('.inputval').value = 20;
+
+let val = Math.trunc(Math.random() * 21);
+
+// console.log(val); 
+
+document.querySelector('.btnclk').addEventListener('click', function () {
+  const inputvalue = Number(document.querySelector('.inputval').value);
+
+  if (!inputvalue) {
+    document.querySelector('.outval').innerHTML = 'Enter Value';
+  }
+  else if(val === inputvalue)
+  {
+        
+  }
+});
+
+// console.log(document.querySelector('.inputval').value);
