@@ -812,7 +812,7 @@
 
 // console.log(foreCast(temp));
 
-// project 1 Guess the Number
+// PROJECT 1 NUMBER GUESSING
 
 // console.log(document.querySelector('.outval').textContent);
 
@@ -821,19 +821,45 @@
 
 // document.querySelector('.inputval').value = 20;
 
+//AUTO GENERATE VALUE
 let val = Math.trunc(Math.random() * 21);
+let score = 20;
 
-// console.log(val); 
+console.log(val);
 
 document.querySelector('.btnclk').addEventListener('click', function () {
   const inputvalue = Number(document.querySelector('.inputval').value);
 
+  //NO INPUT VALUE
   if (!inputvalue) {
     document.querySelector('.outval').innerHTML = 'Enter Value';
   }
-  else if(val === inputvalue)
-  {
-        
+
+  //CORRECT VALUE
+  else if (val === inputvalue) {
+    document.querySelector('.outval').innerHTML = 'Correct Number!';
+    document.querySelector('body').style.backgroundImage = 'bg-image.jpg';
+  }
+
+  //WORNG VALUE
+  else if (inputvalue > val) {
+    if (score > 1) {
+      document.querySelector('.outval').innerHTML = 'Too High <3';
+      score--;
+      document.querySelector('.scoreval').innerHTML = score;
+    } else {
+      document.querySelector('.outval').innerHTML = 'You Lost The Game >!<';
+      document.querySelector('.scoreval').innerHTML = 0;
+    }
+  } else if (inputvalue < val) {
+    if (score > 1) {
+      document.querySelector('.outval').innerHTML = '<3 Too Low';
+      score--;
+      document.querySelector('.scoreval').innerHTML = score;
+    } else {
+      document.querySelector('.outval').innerHTML = 'You Lost The Game >!<';
+      document.querySelector('.scoreval').innerHTML = 0;
+    }
   }
 });
 

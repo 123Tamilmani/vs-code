@@ -1,12 +1,23 @@
 body {
-  background-image: url(bg-image.jpg);
+  background-image: url(bg-image1.jpg);
+  color: white;
+  font-family: monospace;
   text-align: center;
 }
+
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  color: black;
+}
+
 .inputval {
-  background-color: gray;
+  background-color: black;
   color: white;
   font-size: 2rem;
-  width: 100px;
+  width: 80px;
   margin-bottom: 20px;
   text-align: center;
   cursor: text;
@@ -19,20 +30,37 @@ body {
   font-size: 20px;
   background-color: aliceblue;
   cursor: pointer;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+}
+
+.scrboard {
+  /* border: 2px solid black; */
+  border: 3px solid black;
+  color: black;
+  font-size: 90px;
+  /* margin: 30p; */
+  /* margin-top: 20px; */
+  /* margin: 20px; */
+  /* padding: 30px; */
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .outval {
-  margin-top: 40px;
-  font-size: 50px;
+  /* margin-top: 10px; */
+  font-size: 40px;
 }
 
 .scores {
   font-size: 30px;
 }
 
+.highscore {
+}
+
 .tryagain {
   /* margin-top: 40px; */
+  font-size: 18px;
   position: absolute;
   bottom: 100px;
   right: 50px;
@@ -49,14 +77,4 @@ body {
 .tryagain:active,
 .btnclk:active {
   background-color: black;
-}
-
-.scrboard {
-  border: 2px solid black;
-  font-size: 90px;
-  /* margin-top: 20px; */
-  /* margin: 20px; */
-  padding: 10px;
-  padding-left: 40px;
-  padding-right: 40px;
 }
