@@ -822,8 +822,11 @@
 // document.querySelector('.inputval').value = 20;
 
 //AUTO GENERATE VALUE
-let val = Math.trunc(Math.random() * 21);
+let val = Math.trunc(Math.random() * 20 + 1);
+
 let score = 20;
+
+let highscr = 0;
 
 console.log(val);
 
@@ -837,8 +840,15 @@ document.querySelector('.btnclk').addEventListener('click', function () {
 
   //CORRECT VALUE
   else if (val === inputvalue) {
+    if (highscr < score) {
+      highscr = score;
+      document.querySelector('.highscr').innerHTML = highscr;
+    }
     document.querySelector('.outval').innerHTML = 'Correct Number!';
-    document.querySelector('body').style.backgroundImage = 'bg-image.jpg';
+    document.querySelector('.scrboard').innerHTML = inputvalue;
+    document.querySelector('.scrboard').style.fontSize = '150px';
+    document.querySelector('.scrboard').style.backgroundColor = 'white';
+    document.querySelector('.outval').style.backgroundColor = 'black';
   }
 
   //WORNG VALUE
@@ -863,4 +873,15 @@ document.querySelector('.btnclk').addEventListener('click', function () {
   }
 });
 
-// console.log(document.querySelector('.inputval').value);
+document.querySelector('.tryagain').addEventListener('click', function () {
+  document.querySelector('.outval').innerHTML = 'Start guessing...';
+  score = 20;
+  document.querySelector('.scoreval').innerHTML = score;
+  document.querySelector('.scrboard').innerHTML = '?';
+  document.querySelector('.scrboard').style.backgroundColor = '';
+  document.querySelector('.scrboard').style.fontSize = '100px';
+  document.querySelector('.outval').style.backgroundColor = '';
+  document.querySelector('.inputval').value = '';
+  val = Math.trunc(Math.random() * 20 + 1);
+  console.log(val);
+});
