@@ -821,67 +821,65 @@
 
 // document.querySelector('.inputval').value = 20;
 
-//AUTO GENERATE VALUE
-let val = Math.trunc(Math.random() * 20 + 1);
+// //AUTO GENERATE VALUE
+// let val = Math.trunc(Math.random() * 20 + 1);
 
-let score = 20;
+// let score = 20;
 
-let highscr = 0;
+// let highscr = 0;
 
-console.log(val);
+// console.log(val);
 
-document.querySelector('.btnclk').addEventListener('click', function () {
-  const inputvalue = Number(document.querySelector('.inputval').value);
+// const displayOutval = function (message) {
+//   document.querySelector('.outval').innerHTML = message;
+// };
 
-  //NO INPUT VALUE
-  if (!inputvalue) {
-    document.querySelector('.outval').innerHTML = 'Enter Value';
-  }
+// document.querySelector('.btnclk').addEventListener('click', function () {
+//   const inputvalue = Number(document.querySelector('.inputval').value);
 
-  //CORRECT VALUE
-  else if (val === inputvalue) {
-    if (highscr < score) {
-      highscr = score;
-      document.querySelector('.highscr').innerHTML = highscr;
-    }
-    document.querySelector('.outval').innerHTML = 'Correct Number!';
-    document.querySelector('.scrboard').innerHTML = inputvalue;
-    document.querySelector('.scrboard').style.fontSize = '150px';
-    document.querySelector('.scrboard').style.backgroundColor = 'white';
-    document.querySelector('.outval').style.backgroundColor = 'black';
-  }
+//   //NO INPUT VALUE
+//   if (!inputvalue) {
+//     // document.querySelector('.outval').innerHTML = 'Enter Value';
+//     displayOutval('Enter value');
+//   }
 
-  //WORNG VALUE
-  else if (inputvalue > val) {
-    if (score > 1) {
-      document.querySelector('.outval').innerHTML = 'Too High <3';
-      score--;
-      document.querySelector('.scoreval').innerHTML = score;
-    } else {
-      document.querySelector('.outval').innerHTML = 'You Lost The Game >!<';
-      document.querySelector('.scoreval').innerHTML = 0;
-    }
-  } else if (inputvalue < val) {
-    if (score > 1) {
-      document.querySelector('.outval').innerHTML = '<3 Too Low';
-      score--;
-      document.querySelector('.scoreval').innerHTML = score;
-    } else {
-      document.querySelector('.outval').innerHTML = 'You Lost The Game >!<';
-      document.querySelector('.scoreval').innerHTML = 0;
-    }
-  }
-});
+//   //CORRECT VALUE
+//   else if (val === inputvalue) {
+//     if (highscr < score) {
+//       highscr = score;
+//       document.querySelector('.highscr').innerHTML = highscr;
+//     }
+//     // document.querySelector('.outval').innerHTML = 'Correct Number!';
+//     displayOutval('Correct Number!');
+//     document.querySelector('.scrboard').innerHTML = inputvalue;
+//     document.querySelector('.scrboard').style.fontSize = '150px';
+//     document.querySelector('.scrboard').style.backgroundColor = 'white';
+//     document.querySelector('.outval').style.backgroundColor = 'black';
+//   } else if (val !== inputvalue) {
+//     if (score > 1) {
+//       // document.querySelector('.outval').innerHTML =
+//       //   inputvalue < val ? 'Too Low' : 'Too High';
+//       displayOutval(inputvalue < val ? 'Too Low' : 'Too High');
+//       score--;
+//       document.querySelector('.scoreval').innerHTML = score;
+//     } else {
+//       // document.querySelector('.outval').innerHTML = 'You Lost The Game >!<';
+//       displayOutval('You Lost The Game >!<');
+//       document.querySelector('.scoreval').innerHTML = 0;
+//     }
+//   }
+// });
 
-document.querySelector('.tryagain').addEventListener('click', function () {
-  document.querySelector('.outval').innerHTML = 'Start guessing...';
-  score = 20;
-  document.querySelector('.scoreval').innerHTML = score;
-  document.querySelector('.scrboard').innerHTML = '?';
-  document.querySelector('.scrboard').style.backgroundColor = '';
-  document.querySelector('.scrboard').style.fontSize = '100px';
-  document.querySelector('.outval').style.backgroundColor = '';
-  document.querySelector('.inputval').value = '';
-  val = Math.trunc(Math.random() * 20 + 1);
-  console.log(val);
-});
+// document.querySelector('.tryagain').addEventListener('click', function () {
+//   // document.querySelector('.outval').innerHTML = 'Start guessing...';
+//   displayOutval('Start guessing...');
+//   score = 20;
+//   document.querySelector('.scoreval').innerHTML = score;
+//   document.querySelector('.scrboard').innerHTML = '?';
+//   document.querySelector('.scrboard').style.backgroundColor = '';
+//   document.querySelector('.scrboard').style.fontSize = '100px';
+//   document.querySelector('.outval').style.backgroundColor = '';
+//   document.querySelector('.inputval').value = '';
+//   val = Math.trunc(Math.random() * 20 + 1);
+//   console.log(val);
+// });
