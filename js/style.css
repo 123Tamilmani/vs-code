@@ -1,80 +1,38 @@
 body {
-  background-image: url(bg-image1.jpg);
-  color: white;
-  font-family: monospace;
+  background-color: lightgreen;
+}
+
+.buttons {
   text-align: center;
+  margin-top: 100px;
+  /* font-size: 100px; */
+  /* padding: 100px; */
+  /* size: 100px; */
+  /* width: 20px; */
+  /* height: 0px; */
+  /* border-radius: 30px; */
 }
 
-h1 {
-  font-size: 45px;
-}
-
-h2 {
-  color: black;
-}
-
-.inputval {
-  background-color: black;
-  color: white;
-  font-size: 2rem;
-  width: 80px;
-  margin-bottom: 20px;
-  text-align: center;
-  cursor: text;
-  /* padding: 20px; */
-}
-
-.btnclk {
-  width: 70px;
-  height: 30px;
+.btnone {
+  /* margin-top:100px; */
+  border-radius: 5px;
   font-size: 20px;
-  background-color: aliceblue;
-  cursor: pointer;
-  margin-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.scrboard {
-  /* border: 2px solid black; */
-  border: 3px solid black;
-  color: black;
-  font-size: 100px;
-  /* margin: 30p; */
-  /* margin-top: 20px; */
-  /* margin: 20px; */
-  /* padding: 30px; */
-  padding-left: 50px;
-  padding-right: 50px;
+.btntwo {
+  /* margin-top: 100px; */
+  border-radius: 5px;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.outval {
-  /* margin-top: 10px; */
-  font-size: 40px;
-}
-
-.scores {
-  font-size: 30px;
-}
-
-.highscore {
-}
-
-.tryagain {
-  /* margin-top: 40px; */
-  font-size: 18px;
-  position: absolute;
-  bottom: 100px;
-  right: 50px;
-  width: 100px;
-  height: 40px;
-  cursor: pointer;
-  background-color: aliceblue;
-}
-
-/* button {
-  
-} */
-
-.tryagain:active,
-.btnclk:active {
-  background-color: black;
+.btnthree {
+  /* margin-top: 100px; */
+  border-radius: 5px;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
