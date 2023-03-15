@@ -1,115 +1,83 @@
-/*
-body {
-  background-color: lightgreen;
-}
-
-.buttons {
-  text-align: center;
-  margin-top: 100px;
-  /* font-size: 100px; */
-  /* padding: 100px; */
-  /* size: 100px; */
-  /* width: 20px; */
-  /* height: 0px; */
-  /* border-radius: 30px; */
-/* } */
-
-/* .btnone { */
-  /* margin-top:100px; */
-  /* border-radius: 30px white; */
-  /* background-color: white; */
-  /* border-radius: 5px;
-  font-size: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-} */
-
-/* .btntwo { */
-  /* margin-top: 100px; */
-  /* border-radius: 5px;
-  font-size: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-} */
-
-/* .btnthree { */
-  /* margin-top: 100px; */
-  /* border-radius: 5px;
-  font-size: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-} */
-
-/* .mod1
+body
 {
-  background-color: rgb(248, 248, 248);
-  font-size: 1.5rem;
-  border: 2px solid rgb(248, 248, 248);
-  padding: 10px;
-  color: black;
-  border-radius: 10%;
+  /* align-items: center; */
+  /* background: repeating-linear-gradient(#bde0fe,#a2d2ff); */
+  /* background: -webkit-linear-gradient(#a2d2ff 50% ,#bde0fe 50%); */
+  /* background: linear-gradient(#a2d2ff,#bde0fe); */
+  background-image: url(images/beautiful-color-ui-gradients-backgrounds-purple-love.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
-.mod2
+.container
 {
-  border: 2px solid rgb(248, 248, 248);
-  font-size: 1.5rem;
-  background-color: rgb(248, 248, 248);
-  padding: 10px;
-  color: black;
-  border-radius: 10%;
-} */
-*{
-  padding: 0px;
-  margin: 0px;
-  box-sizing:content-box;
-}
-
-body{
-  align-items: center;
-  background-color: hsl(138, 100%, 56%);
-}
-.mod
-{
-  border: 2px solid rgb(248, 248, 248);
-  font-size: 1.5rem;
-  background-color: rgb(248, 248, 248);
-  padding: 10px;
-  color: black;
-  border-radius: 10%;
-}
-/* .container
-{
-  margin-top: 300px;
+  border: 2px solid;
   display: flex;
-  justify-content: space-evenly;
-} */
-
-.hidden
+  width: 1000px;
+  height: 600px;
+  margin-top: 100px;
+  margin-left: 200px;
+}
+.player1
 {
-  display: none;
+  position: relative;
+  border: 2px solid;
+  width: 500px;
+  height: 600px;
 }
 
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70%;
-
-  background-color: white;
-  padding: 2rem;
-  border-radius: 5px;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-  z-index: 10;
+.name1
+{
+  font-size: 2rem;
+  text-align: center;
 }
 
-.overlay {
+.score1
+{
+  font-size: 3rem;
+  text-align: center;
+}
+
+.current1
+{
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(3px);
-  z-index: 5;
+  border: 2px solid;
+  width: 180px;
+  height: 120px;
+  font-size: 1rem;
+  left: 30%;
+  bottom: 10%;
+  text-align: center;
+}
+
+.player2
+{
+  position: relative;
+  width: 500px;
+  height: 600px;
+  border: 2px solid;
+}
+
+.name2
+{
+  font-size: 2rem;
+  text-align: center;
+}
+
+.score2
+{
+  font-size: 3rem;
+  text-align: center;
+}
+
+.current2
+{
+  position: absolute;
+  border: 2px solid;
+  width: 180px;
+  height: 120px;
+  font-size: 1rem;
+  left: 30%;
+  bottom: 10%;
+  text-align: center;
 }
