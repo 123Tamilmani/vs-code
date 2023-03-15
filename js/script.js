@@ -884,3 +884,29 @@
 //   console.log(val);
 // });
 
+// console.log(6);
+
+const modal = document.querySelector('.modal');
+
+const overlay = document.querySelector('.overlay');
+
+const btncls = document.querySelector('.close-modal');
+
+const btnopn = document.querySelectorAll('.mod');
+// console.log(btnopn);
+
+const closeModal = function(){
+    modal.classList.add('hidden');
+    overlay.classList.add('hidden');
+}
+for(let i = 0;i<btnopn.length;i++)
+    btnopn[i].addEventListener('click', function()
+    {
+        console.log('Button clicked');
+        modal.classList.remove('hidden');
+        overlay.classList.remove('hidden');
+    });
+
+    btncls.addEventListener('click', closeModal);
+
+overlay.addEventListener('click', closeModal);
