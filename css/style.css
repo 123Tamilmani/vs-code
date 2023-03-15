@@ -1,3 +1,39 @@
-p{
-    color: aqua;
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing:content-box;
+}
+.mod1
+{
+    border: 2px solid black;
+    /* width: 30%; */
+    font-size: 1rem;
+    color: black;
+    border-radius: 10%;
+}
+.mod2
+{
+    border: 2px solid black;
+    /* width: 30%; */
+    font-size: 1rem;
+    color: black;
+    border-radius: 10%;
+}
+.mod3
+{
+    border: 2px solid black;
+    /* width: 30%; */
+    font-size: 1rem;
+    color: black;
+    border-radius: 10%;
+}
+.container
+{
+    border: 2px solid;
+    /* width: auto; */
+    /* align-items: center; */
+    text-align: center;
+    /* align-content: center; */
+    padding: 40px;
+    /* align-self: center; */
 }
