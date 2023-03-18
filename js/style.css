@@ -7,6 +7,7 @@ body
   background-image: url(images/beautiful-color-ui-gradients-backgrounds-purple-love.png);
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: monospace;
 }
 .container
 {
@@ -20,6 +21,21 @@ body
   margin-top: 100px;
   margin-left: 200px;
 }
+
+img
+{
+  position: absolute;
+  top: 25%;
+  left: 44%;
+  width: 120px;
+  height: 120px;
+}
+
+.hidden
+{
+  display: none;
+}
+
 .player1
 {
   color: #370617;
@@ -101,6 +117,7 @@ body
 {
   color: #370617;
   border-radius: 20px;
+  cursor: pointer;
   font-size: 1rem;
   width: 100px;
   height: 30px;
@@ -114,7 +131,7 @@ body
 .roll
 {
   color: #370617;
-  cursor: ;
+  cursor: pointer;
   border-radius: 20px;
   width: 100px;
   height: 30px;
@@ -127,6 +144,7 @@ body
 {
   color: #370617;
   border-radius: 20px;
+  cursor: pointer;
   width: 100px;
   height: 30px;
   position: absolute;

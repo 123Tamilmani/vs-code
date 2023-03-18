@@ -914,5 +914,29 @@
 // overlay.addEventListener('click', closeModal);
 
 
-//
 
+
+// Pig Game
+
+
+const score1 = document.querySelector('.score1');
+const score2 = document.querySelector('.score2');
+const diceface =  document.querySelector('.diceface');
+const btnroll = document.querySelector('.roll');
+const btnreset = document.querySelector('.reset');
+const btnhold = document.querySelector('.hold');
+
+//Intial Value
+
+score1.textContent = 0;
+score2.textContent = 0;
+
+//Dice Functionality
+ btnroll.addEventListener('click', function()
+ {
+    const dice = Math.trunc(Math.random()*6)+1;
+    console.log(dice);
+    diceface.classList.remove('hidden');
+
+    diceface.src = `dice-${dice}.png`;
+ })
