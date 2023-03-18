@@ -40,10 +40,12 @@ img
 {
   color: #370617;
   position: relative;
-  border: 2px solid #ffc8dd;
+  /* border: 2px solid #ffc8dd; */
+  background-color: #ffafcc;
+  border: 2px solid #ffafcc;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  background-color: #ffc8dd;
+  /* background-color: #ffc8dd; */
   width: 500px;
   height: 600px;
 }
@@ -85,6 +87,12 @@ img
   border: 2px solid #ffafcc;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
+}
+
+.playeractive
+{
+  border: 2px solid #ffc8dd;
+  background-color: #ffc8dd;
 }
 
 .name2
@@ -169,7 +177,7 @@ img
 .currentscore1
 {
   /* color: #f4978e; */
-  color: #660708;
+  /* color: #660708; */
   font-size: 2.5rem;
   margin-bottom: 0px;
   margin-top: 0px;
@@ -177,8 +185,17 @@ img
 
 .currentscore2
 {
-  color: #660708;
+  /* color: #660708; */
   font-size: 2.5rem;
   margin-bottom: 0px;
   margin-top: 0px;
 }
+
+.playerwinner
+{
+  background-color: black;
+  color: #e5383b;
+}
+/* .name{
+  color: #e5383b;
+} */
