@@ -953,7 +953,6 @@
 //    if(playing)
 //    {
 //       const dice = Math.trunc(Math.random()*6)+1;
-//       console.log(dice);
 //       diceface.classList.remove('hidden');
 
 //       diceface.src = `dice-${dice}.png`;
@@ -977,7 +976,7 @@
 //       scores[activeplayer-1] += Currentsc;
 //       document.getElementById(`sc${activeplayer}`).textContent = scores[activeplayer-1];
 
-//       if(scores[activeplayer-1]>=10)
+//       if(scores[activeplayer-1]>=100)
 //       {
 //          playing = false;
 //          document.querySelector(`.player${activeplayer}`).classList.add('playerwinner');
@@ -996,11 +995,23 @@
 //  {
 //    document.querySelector(`.player${activeplayer}`).classList.remove('playerwinner');
 //    document.getElementById(`n${activeplayer}`).textContent = `PLAYER ${activeplayer}`;
-//    activeplayer = 1;
 //    document.querySelector('.score1').textContent = 0;
 //    document.querySelector('.currentscore1').textContent = 0;
 //    document.querySelector('.score2').textContent = 0;
 //    document.querySelector('.currentscore2').textContent = 0;
 //    document.querySelector('.diceface').classList.add('hidden');
+//    activeplayer = 1;
+//    document.querySelector(`.player${activeplayer}`).classList.add('playeractive');
 //    playing = true;
-//  })
+//     Currentsc = 0;
+//     scores[0] = 0;
+//     scores[1] = 0;
+//     score1.textContent = 0;
+//     score2.textContent = 0;
+//     for(let i = 0;i<scores.length;i++)
+//     {
+//         console.log(scores[i]);
+//     }
+//     Currentsc1.textContent = 0;
+//     Currentsc2.textContent = 0;
+//  });
